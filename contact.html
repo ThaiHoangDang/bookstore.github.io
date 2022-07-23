@@ -30,6 +30,7 @@
                   </div>
                   <div class="form-field">
                     <select id="purpose" name="purpose" required>
+                      <option value="" disabled selected>Select your option</option>
                       <option value="sell_book">I want to sell books</option>
                       <option value="buy_book">I want to buy books</option>
                     </select>
@@ -89,7 +90,7 @@
                       <ul>
                         <li>
                           <input type="radio" id="receive_news" name="received_news" value="yes" checked="checked" required>
-                          <label for="eceive_news">Yes</label>
+                          <label for="receive_news">Yes</label>
                         </li>
                         <li>
                           <input type="radio" id="not_received_news" name="received_news" value="no" required>
@@ -116,11 +117,21 @@
         </div>
     </main>
     <footer>
-        <a href="#">About Us</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms</a>
-        <a href="#">Copyright</a>
-        <a href="contact.html">Contact Us</a>
+        <div class="footer_element">
+            <a href="#">About Us</a>
+        </div>
+        <div class="footer_element">
+            <a href="#">Privacy Policy</a>
+        </div>
+        <div class="footer_element">
+            <a href="#">Terms</a>
+        </div>
+        <div class="footer_element">
+            <a href="#">Copyright</a>
+        </div>
+        <div class="footer_element">
+            <a href="contact.html">Contact Us</a>
+        </div>
     </footer>
 </body>
 </html>

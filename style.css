@@ -146,7 +146,7 @@ main {
 .main_pic {
     width: 40%;
     height: 40%;
-    min-width: 320px;
+    min-width: 250px;
     margin: 0 auto;
 }
 
@@ -154,7 +154,7 @@ main {
     width: 80px;
     height: 120px;
     border: 1px solid black;
-    margin: 10px 15px;
+    margin: 10px 12.5px;
 }
 
 .flexbox {
@@ -179,6 +179,10 @@ button {
     font-weight: 600;
 }
 
+button:hover {
+    background-color: rgb(255, 140, 0);
+}
+
 form {
     margin: 50px;
 }
@@ -187,11 +191,24 @@ form {
     margin-bottom: 15px;
 }
 
+textarea {
+    width: 200px;
+    height: 100px;
+}
+
+#arrow {
+    color: orange;
+}
+
 footer {
     background-color: rgb(125, 157, 156);
     text-align: center;
-    height: 200px;
-    padding: 80px;
+    height: 250px;
+    padding: 40px;
+}
+
+.footer_element {
+    margin: 5px;
 }
 
 [class*="col-"] {
@@ -202,9 +219,6 @@ footer {
     float: left;
     padding: 15px;
 }
-
-
-
 
 @media only screen and (min-width: 750px) {
     /* For tablets: */

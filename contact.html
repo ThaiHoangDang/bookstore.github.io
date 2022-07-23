@@ -25,10 +25,10 @@
             <h1>Contact Us</h1>
             <form onsubmit="return false;" method="post" action="" enctype="application/x-www-form-urlencoded">
                 <div class="form-row">
-                  <div class="form-label">
+                  <div class="form-label col-6">
                     <label for="purpose">Purpose of contact</label>
                   </div>
-                  <div class="form-field">
+                  <div class="form-field col-6">
                     <select id="purpose" name="purpose" required>
                       <option value="" disabled selected>Select your option</option>
                       <option value="sell_book">I want to sell books</option>
@@ -38,28 +38,28 @@
                 </div>
     
                 <div class="form-row">
-                  <div class="form-label">
+                  <div class="form-label col-6">
                     <label for="name">Your name</label>
                   </div>
-                  <div class="form-field">
+                  <div class="form-field col-6">
                     <input required id="name" type="text" name="name" maxlength="40">
                   </div>
                 </div>
 
                 <div class="form-row">
-                  <div class="form-label">
+                  <div class="form-label col-6">
                     <label for="email">Your email</label>
                   </div>
-                  <div class="form-field">
+                  <div class="form-field col-6">
                     <input required id="email" type="email" name="email">
                   </div>
                 </div>
     
                 <div class="form-row">
-                  <div class="form-label">
+                  <div class="form-label col-6">
                     <label for="phone">Your phone</label>
                   </div>
-                  <div class="form-field">
+                  <div class="form-field col-6">
                     <input required id="phone" type="tel" name="phone" pattern="[0-9]{9,13}" title="Enter 9 to 13 digits">
                   </div>
                 </div>
@@ -89,18 +89,18 @@
                     <div class="form-field">
                       <ul>
                         <li>
-                          <input type="radio" id="receive_news" name="received_news" value="yes" checked="checked" required>
-                          <label for="receive_news">Yes</label>
+                            <input type="radio" id="receive_news" name="received_news" value="yes" checked="checked" required>
+                            <label for="receive_news">Yes</label>
                         </li>
                         <li>
-                          <input type="radio" id="not_received_news" name="received_news" value="no" required>
-                          <label for="not_received_news">No</label>
+                            <input type="radio" id="not_received_news" name="received_news" value="no" required>
+                            <label for="not_received_news">No</label>
                         </li>
                       </ul>
                     </div>
-                  </div>
+                </div>
     
-                <div class="form-row">
+                <div class="form-row ">
                   <div class="form-label">
                     <label for="message">Your message</label>
                   </div>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Sellers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="image/logo.png" alt="bookstore logo">
+            <h1>Halong</h1><p>bookstore</p>
+        </div>
+        <nav>
+            <a href="index.html" class="col-3">Home</a>
+            <a href="bestsellers.html" class="col-3">Best Sellers</a>
+            <a href="bestsellers.html" class="col-3">Fiction</a>
+            <a href="bestsellers.html" class="col-3">Nonfiction</a>
+        </nav>
+    </header>
+    <main>
+        <div class="row container" id="form-container">
+            <h1>Contact Us</h1>
+            <form onsubmit="return false;" method="post" action="" enctype="application/x-www-form-urlencoded">
+                <div class="form-row">
+                  <div class="form-label">
+                    <label for="purpose">Purpose of contact</label>
+                  </div>
+                  <div class="form-field">
+                    <select id="purpose" name="purpose" required>
+                      <option value="sell_book">I want to sell books</option>
+                      <option value="buy_book">I want to buy books</option>
+                    </select>
+                  </div>
+                </div>
+    
+                <div class="form-row">
+                  <div class="form-label">
+                    <label for="name">Your name</label>
+                  </div>
+                  <div class="form-field">
+                    <input required id="name" type="text" name="name" maxlength="40">
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-label">
+                    <label for="email">Your email</label>
+                  </div>
+                  <div class="form-field">
+                    <input required id="email" type="email" name="email">
+                  </div>
+                </div>
+    
+                <div class="form-row">
+                  <div class="form-label">
+                    <label for="phone">Your phone</label>
+                  </div>
+                  <div class="form-field">
+                    <input required id="phone" type="tel" name="phone" pattern="[0-9]{9,13}" title="Enter 9 to 13 digits">
+                  </div>
+                </div>
+    
+                <div class="form-row">
+                  <div class="form-label">
+                    <label>Contact method</label>
+                  </div>
+                  <div class="form-field">
+                    <ul>
+                      <li>
+                        <input type="checkbox" id="contact_email" name="contact_method[]" value="email">
+                        <label for="contact_email">By Email</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="contact_phone" name="contact_method[]" value="phone">
+                        <label for="contact_phone">By Phone</label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-label">
+                      <label>Do you want to receive our weekly newslette</label>
+                    </div>
+                    <div class="form-field">
+                      <ul>
+                        <li>
+                          <input type="radio" id="receive_news" name="received_news" value="yes" checked="checked" required>
+                          <label for="eceive_news">Yes</label>
+                        </li>
+                        <li>
+                          <input type="radio" id="not_received_news" name="received_news" value="no" required>
+                          <label for="not_received_news">No</label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+    
+                <div class="form-row">
+                  <div class="form-label">
+                    <label for="message">Your message</label>
+                  </div>
+                  <div class="form-field">
+                    <textarea cols="40" rows="10" required id="message" name="message"></textarea>
+                  </div>
+                </div>
+    
+                <div class="form-row">
+                  <input type="reset" value="   Clear   ">
+                  <input type="submit" value="   Send   ">
+                </div>
+              </form>
+        </div>
+    </main>
+    <footer>
+        <a href="#">About Us</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+        <a href="#">Copyright</a>
+        <a href="contact.html">Contact Us</a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Roboto+Slab:wght@300;400&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    line-height: 140%;
+}
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+}
+
+#logo {
+    width: 100%;
+    background-color: rgb(59, 76, 79);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    display: flex;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#logo p {
+    margin: 36px 10px 0 10px;
+    font-size: large;
+}
+
+#logo img {
+    padding: 10px 20px 0px 20px;
+    height: 80px;
+}
+
+nav a, footer a, #second_nav a {
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+nav a:hover, #second_nav a:hover {
+    background-color: rgb(67, 88, 92);
+    text-decoration: underline;
+}
+
+footer a:hover, .breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+#banner {
+    background-image: url(image/bg1.jpeg);
+    color: white;
+    height: 300px;
+    font-size: xx-large;
+    text-align: center;
+    padding-top: 115px;
+    font-weight: 500;
+}
+
+#second_nav, #banner{
+    display: none;
+}
+
+#second_nav a, nav a {
+    background-color: rgb(87, 111, 114);
+    display: grid;
+    text-align: center;
+}
+
+.selected {
+    background-color: rgb(67, 88, 92);
+}
+
+main {
+    padding: 5px;
+    background-color: rgb(246, 246, 246)
+}
+
+.row {
+    margin: 100px 0;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 1px rgba(0,0,0,0.24);
+}
+
+.row h1 {
+    text-align: center;
+    background-color: rgb(226, 226, 226);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 1px rgba(0,0,0,0.24);
+}
+
+.row h1 a {
+    color: rgb(59, 76, 79);
+    text-decoration: none;
+}
+
+.row h1 a:hover {
+    text-decoration: underline;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.row > div {
+    text-align: center;
+}
+
+.row > a > div {
+    text-align: center;
+}
+
+.row > a > div:hover {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 1px rgba(0,0,0,0.24);
+}
+
+.row > div:hover {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 1px rgba(0,0,0,0.24);
+}
+
+.row a div img {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto 20px auto;
+}
+
+.container p, .container form {
+    padding: 10px 20px;
+}
+
+.breadcrumb {
+    margin-top: 70px;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+}
+
+.main_pic {
+    width: 40%;
+    height: 40%;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+.side_pic {
+    width: 80px;
+    height: 120px;
+    border: 1px solid black;
+    margin: 10px 15px;
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.vertical_flex {
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.price {
+    margin-right: 0;
+    margin-left: auto;
+    padding: 50px;
+}
+
+button {
+    background-color: orange;
+    height: 40px;
+    font-weight: 600;
+}
+
+form {
+    margin: 50px;
+}
+
+.form-row {
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: rgb(125, 157, 156);
+    text-align: center;
+    height: 200px;
+    padding: 80px;
+}
+
+[class*="col-"] {
+    width: 100%;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+
+
+
+@media only screen and (min-width: 750px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+    .main_pic {
+        min-width: 400px;
+    }
+  }
+  @media only screen and (min-width: 961px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    #second_nav, #banner {
+        display: block;
+    }
+
+    .flexbox {
+        flex-wrap: nowrap;
+    }
+
+    .vertical_flex {
+        flex-direction: column;
+    }
+
+    .main_pic {
+        min-width: 400px;
+    }
+  }
